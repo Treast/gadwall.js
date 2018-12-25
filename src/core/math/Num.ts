@@ -1,26 +1,26 @@
-export class MNumber implements NumberInterface {
+export class Num implements NumberInterface {
   public value: number;
 
   constructor(value: number) {
     this.value = value;
   }
 
-  add(value: number): MNumber {
+  add(value: number): Num {
     this.value += value;
     return this;
   }
 
-  substract(value: number): MNumber {
+  substract(value: number): Num {
     this.value -= value;
     return this;
   }
 
-  multiply(value: number): MNumber {
+  multiply(value: number): Num {
     this.value *= value;
     return this;
   }
 
-  divide(value: number): MNumber {
+  divide(value: number): Num {
     this.value /= value;
     return this;
   }

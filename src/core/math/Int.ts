@@ -1,6 +1,6 @@
-import { MNumber } from './MNumber';
+import { Num } from './Num';
 
-export class Int extends MNumber implements NumberInterface {
+export class Int extends Num implements NumberInterface {
   constructor(value: number) {
     super(value);
     this.formatValue();

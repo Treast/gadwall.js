@@ -1,6 +1,6 @@
-import { MNumber } from './MNumber';
+import { Num } from './Num';
 
-export class Double extends MNumber {
+export class Double extends Num {
   constructor(value: number) {
     super(value);
   }
