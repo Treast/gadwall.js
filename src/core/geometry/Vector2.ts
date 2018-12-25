@@ -23,4 +23,8 @@ export class Vector2 implements VectorInterface {
     const sum = Math.pow(vector.x - this.x, 2) + Math.pow(vector.y - this.y, 2);
     return Math.sqrt(sum);
   }
+
+  clone(): Vector2 {
+    return new Vector2(this.x, this.y);
+  }
 }

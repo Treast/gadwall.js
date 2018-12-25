@@ -32,4 +32,8 @@ export class Vector4 implements VectorInterface {
       + Math.pow(vector.w - this.w, 2);
     return Math.sqrt(sum);
   }
+
+  clone(): Vector4 {
+    return new Vector4(this.x, this.y, this.z, this.w);
+  }
 }

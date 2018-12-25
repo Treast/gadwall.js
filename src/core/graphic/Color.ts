@@ -37,4 +37,8 @@ export class Color {
 
     return (diffR + diffG + diffB) * 100;
   }
+
+  clone(): Color {
+    return new Color(this.red, this.green, this.blue);
+  }
 }
