@@ -5,7 +5,7 @@
   "main": "dist/main.min.js",
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack --config webpack.config.js",
-    "test": "mocha --require babel-register --reporter=nyan"
+    "test": "mocha --compilers js:babel-register --reporter=nyan test/**/*.spec.js"
   },
   "repository": {
     "type": "git",
