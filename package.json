@@ -5,7 +5,7 @@
   "main": "dist/main.min.js",
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack --config webpack.config.js",
-    "test": "mocha --compilers js:babel-register --reporter=nyan test/**/*.spec.js"
+    "test": "cross-env NODE_ENV=development mocha --require @babel/core --require @babel/polyfill --require @babel/register --reporter=nyan test/**/*.spec.js"
   },
   "repository": {
     "type": "git",
@@ -24,6 +24,10 @@
   },
   "homepage": "https://github.com/Treast/gadwall.js#readme",
   "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/polyfill": "^7.2.5",
+    "@babel/preset-env": "^7.2.3",
+    "@babel/register": "^7.0.0",
     "@types/core-js": "^0.9.36",
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
